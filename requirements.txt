@@ -1,0 +1,6 @@
+Flask[async]
+duckdb
+fastparquet
+pandas
+requests
+gunicorn

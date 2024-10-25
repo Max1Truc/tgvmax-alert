@@ -1,0 +1,4 @@
+{
+  "install": "rm -rf ~/.local && mkdir -p /rbd/pnpm-volume/app/.local && ln -s /rbd/pnpm-volume/app/.local ~/.local && pip3 install --cache-dir /tmp --user -r requirements.txt",
+  "start": "python3 ./background_updates.py & python3 -m gunicorn app:app -w 1 --log-file - --timeout 60"
+}

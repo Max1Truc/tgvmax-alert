@@ -1,0 +1,4 @@
+venv
+*.parquet
+*.duckdb
+__pycache__

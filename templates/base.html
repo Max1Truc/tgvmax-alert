@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='simple.min.css') }}">
+    <title>tgvmax dataset</title>
+</head>
+<body>
+  <header>
+    <h1>tgvmax dataset</h1>
+    <p>scraping for stats and notifications</p>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer>
+    <p>
+      <a href="https://ressources.data.sncf.com/explore/dataset/tgvmax/information/">
+        tgvmax dataset
+      </a>
+      - data published by SNCF
+      under the Open Database License (ODbL)
+    </p>
+  </footer>
+</body>
+</html>
